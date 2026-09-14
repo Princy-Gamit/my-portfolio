@@ -1,0 +1,220 @@
+
+/* Universal Selector */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Body */
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f5f1e8;
+    color: #29382d;
+}
+
+
+/* Navigation */
+
+.navbar {
+    background-color: #31543b;
+}
+
+.navbar-brand {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    color: #d8e8d3 !important;
+}
+
+
+/* Hero Section */
+
+.hero {
+    background-color: #dce9d7;
+    padding: 150px 20px 100px;
+    text-align: center;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.profile-photo {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid white;
+    margin-left: 0;
+}
+
+.hero-text {
+    text-align: left;
+    flex: 1;
+}
+
+
+/* Typography */
+
+.hero h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+.hero h1 span {
+    color: #31543b;
+}
+
+.hero p {
+    font-size: 21px;
+}
+
+.welcome {
+    color: #52745a;
+    font-size: 14px !important;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+
+/* Section */
+
+section {
+    padding: 60px 20px;
+}
+
+section h2 {
+    text-align: center;
+    color: #31543b;
+    margin-bottom: 30px;
+}
+
+
+/* About */
+
+#about p {
+    font-size: 18px;
+}
+
+article {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+/* Education */
+
+.education-box {
+    text-align: center;
+    background-color: #e4eddf;
+}
+
+.education-box h3 {
+    color: #31543b;
+}
+
+
+/* Subjects */
+
+.subject-box {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 20px;
+    text-align: center;
+    border: 2px solid #c8d8c3;
+    border-radius: 10px;
+}
+
+.subject-box h3 {
+    color: #52745a;
+    font-size: 21px;
+}
+
+
+/* Languages */
+
+.Languages {
+    text-align: center;
+}
+
+.Languages span {
+    display: inline-block;
+    background-color: #52745a;
+    color: white;
+    padding: 8px 18px;
+    margin: 6px;
+    border-radius: 20px;
+}
+
+
+/* Attribute Selector */
+
+input[type="email"] {
+    border: 2px solid #9db59b;
+}
+
+/* Footer */
+
+footer {
+    background-color: #31543b;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Tablet Responsive Design */
+
+@media (max-width: 768px) {
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+     .profile-photo{
+        width: 160px; height=160px;
+}
+
+    .hero {
+        padding: 120px 20px 70px;
+    }
+
+    .subject-box {
+        margin-bottom: 20px;
+    }
+}
+
+/* Mobile Responsive Design */
+
+@media (max-width: 576px) {
+
+    .hero h1 {
+        font-size: 30px;
+    }
+     .profile-photo{
+        width: 160px; height=160px;
+}
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    section {
+        padding: 45px 15px;
+    }
+
+}
